@@ -1,0 +1,9 @@
+.vagrant/
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.vbox
+*.vbox-prev
+*.vdi
+*.vmdk

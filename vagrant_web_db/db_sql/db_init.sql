@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS tp_db;
+
+CREATE USER IF NOT EXISTS 'tp_user'@'%' IDENTIFIED BY 'tp_password';
+
+GRANT ALL PRIVILEGES ON tp_db.* TO 'tp_user'@'%';
+
+FLUSH PRIVILEGES;

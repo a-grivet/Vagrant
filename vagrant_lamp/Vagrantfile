@@ -1,0 +1,21 @@
+# Project 2 : Create a VM with LAMP stack & shared folder    
+
+# VM Configuration
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/debian-13"
+  config.vm.hostname = "lamp-server"
+
+# Port forwarding : host 7676 -> VM 80
+  config.vm.network "forwarded_port", guest: 80, host: 7676
+
+# Shared file ./shared -> /var/www/html
+  config.vm.synced_folder "./shared", "/var/www/html",
+    owner: "www-data",
+    group: "www-data",
+    mount_options: ["dmode=755,fmode=644"]
+
+  # Script shell provisioned
+  config.vm.provision "shell", path: "./shared/provision.sh"
+end
+
