@@ -70,7 +70,7 @@ Project: **vagrant-lamp**
 - Access: http://ip:7676
 
 ### Preview
-![LAMP preview](/mnt/data/83f747ca-3cc7-4261-8ad6-a612b18b8b56.png)
+![LAMP Preview](./Welcome_server_lamp.png)
 
 ---
 
