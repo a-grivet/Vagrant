@@ -121,10 +121,9 @@ Use the configuration files of the `vagrant_web_db` and replace `web_provision.s
 
 ```ruby
 web.vm.provision "shell", path: "./web_provision_bonus.sh"
-
+```
 
 ### Preview
-
 ![Bonus Preview](./Welcome_php_myadmin.png)
 
 
