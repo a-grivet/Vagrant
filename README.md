@@ -22,7 +22,7 @@
 ## Practical Work – Vagrant
 
 ### Objectives
-Gradually set up a virtual infrastructure using **Vagrant + VirtualBox** to learn:
+Gradually set up a virtual infrastructure using **Vagrant + VirtualBox** to learn :
 - the concept of a *box*
 - automated VM creation
 - provisioning
@@ -33,7 +33,7 @@ Gradually set up a virtual infrastructure using **Vagrant + VirtualBox** to lear
 
 ## Project 1 – Creating a Debian Base Box
 ### Specifications
-Project: **tp-vagrant-debian**
+Project: **vagrant-debian**
 - Box: `bento/debian-13`
 - Configuration:
   - VM Name: `debian-base`
@@ -45,15 +45,11 @@ Project: **tp-vagrant-debian**
   - be accessible via `vagrant ssh`
   - display a custom message in `/etc/motd`
 
-### Deliverables
-- Folder **tp-vagrant-debian** containing:
-  - `Vagrantfile`
-
 ---
 
 ## Project 2 – VM with LAMP Stack + Shared Folder
 ### Specifications
-Project: **tp-vagrant-lamp**
+Project: **vagrant-lamp**
 - Box: `bento/debian-13`
 - Configuration:
   - Hostname: `lamp-server`
@@ -70,18 +66,16 @@ Project: **tp-vagrant-lamp**
   - Clean `/var/www/html`
   - Copy an `index.html` file into the shared folder
   - Edit `/etc/motd`
-  - Script must be idempotent (`vagrant provision`)
+  - Script idempotent (`vagrant provision`)
 - Access: http://ip:7676
 
-### Deliverables
-- Folder **tp-vagrant-lamp** containing:
-  - `Vagrantfile`
-  - Provisioning script
+### Preview
+![LAMP preview](/mnt/data/83f747ca-3cc7-4261-8ad6-a612b18b8b56.png)
 
 ---
 
 ## Project 3 – Multi-VM Infrastructure: Web + Database
-Project: **tp-vagrant-web-db**
+Project: **vagrant-web-db**
 
 ### VM 1: Database (db)
 - Hostname: `db-server`
