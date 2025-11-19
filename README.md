@@ -105,3 +105,6 @@ Project: **vagrant-web-db**
 
 ### Final Objective
 Access from host: **http://ip:8080**
+
+### Preview
+![LAMP Preview](./Connection_established.png)
