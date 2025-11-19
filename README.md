@@ -107,4 +107,24 @@ Project: **vagrant-web-db**
 Access from host: **http://ip:8080**
 
 ### Preview
-![LAMP Preview](./Connection_established.png)
+![ Multi VM : Web & DB Preview](./Connection_established.png)
+
+---
+
+## Bonus: phpMyAdmin Integration
+
+As an optional enhancement to Exercise 3, phpMyAdmin has been installed on the **web** VM to provide a graphical interface for managing the MariaDB instance running on the **db** VM.
+
+### Implementing
+
+Use the configuration files of the `vagrant_web_db` and replace `web_provision.sh` by `web_provision_bonus.sh` in your Vagrantfile :
+
+```ruby
+web.vm.provision "shell", path: "./web_provision_bonus.sh"
+
+
+### Preview
+
+![Bonus Preview](./Welcome_php_myadmin.png)
+
+
